@@ -1,0 +1,35 @@
+{
+  "project_info": {
+    "project_number": "867437903104",
+    "firebase_url": "https://mob21firebase-1fc6f-default-rtdb.firebaseio.com",
+    "project_id": "mob21firebase-1fc6f",
+    "storage_bucket": "mob21firebase-1fc6f.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:867437903104:android:1d135e64665fca048a07e5",
+        "android_client_info": {
+          "package_name": "com.jy.mob21firebase"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDNqL6NhtFISIhqQzklX_1tGK8FRNqcnNg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "867437903104-2kmogd53eucta63clfmd6c9sa7iqd8qe.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

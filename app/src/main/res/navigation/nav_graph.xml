@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/loginFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.jy.mob21firebase.ui.home.HomeFragment"
+        android:label="Home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_home_to_addTodo"
+            app:destination="@id/addTodoFragment" />
+        <action
+            android:id="@+id/action_home_to_editTodo"
+            app:destination="@id/editTodoFragment" />
+        <action
+            android:id="@+id/action_home_to_profile"
+            app:destination="@id/profileFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/addTodoFragment"
+        android:name="com.jy.mob21firebase.ui.addTodo.add.AddTodoFragment"
+        android:label="Add Task"
+        tools:layout="@layout/fragment_base_manage_todo" />
+    <fragment
+        android:id="@+id/editTodoFragment"
+        android:name="com.jy.mob21firebase.ui.addTodo.edit.EditTodoFragment"
+        android:label="Edit task"
+        tools:layout="@layout/fragment_base_manage_todo">
+        <argument android:name="taskId" app:argType="string"/>
+    </fragment>
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="com.jy.mob21firebase.ui.login.LoginFragment"
+        android:label="fragment_login"
+        tools:layout="@layout/fragment_login" >
+        <action
+            android:id="@+id/action_login_to_register"
+            app:destination="@id/registerFragment" />
+        <action
+            android:id="@+id/action_login_to_home"
+            app:destination="@id/homeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/registerFragment"
+        android:name="com.jy.mob21firebase.ui.register.RegisterFragment"
+        android:label="fragment_register"
+        tools:layout="@layout/fragment_register" >
+        <action
+            android:id="@+id/action_register_to_home"
+            app:destination="@id/homeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/profileFragment"
+        android:name="com.jy.mob21firebase.ui.profile.ProfileFragment"
+        android:label="Profile"
+        tools:layout="@layout/fragment_profile"/>
+</navigation>

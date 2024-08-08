@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">mob21firebase</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title">Title</string>
+    <string name="description">Description</string>
+    <string name="add">Add</string>
+    <string name="update">Update</string>
+    <string name="email">Email</string>
+    <string name="enter_your_email">Enter your email</string>
+    <string name="password">Password</string>
+    <string name="enter_your_password">Enter your password</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="enter_your_confirm_password">Enter your confirm password</string>
+    <string name="login">Login</string>
+    <string name="register">Register</string>
+    <string name="no_task_available">No task available</string>
+    <string name="first_name">First name</string>
+    <string name="enter_your_first_name">Enter your first name</string>
+    <string name="last_name">Last Name</string>
+    <string name="enter_your_last_name">Enter your last name</string>
+    <string name="name">Name</string>
+    <string name="your_name">Your name</string>
+    <string name="your_email">Your email</string>
+    <string name="edit_profile_picture">Edit profile picture</string>
+    <string name="home">Home</string>
+    <string name="profile">Profile</string>
+    <string name="logout">Logout</string>
+    <string name="login_with_google">Login With Google</string>
+</resources>

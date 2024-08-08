@@ -1,0 +1,60 @@
+<layout xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context="com.jy.mob21firebase.ui.home.HomeFragment">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvTodos"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingHorizontal="@dimen/m"
+            android:paddingVertical="@dimen/xxs"
+            android:visibility="gone"/>
+
+        <LinearLayout
+            android:id="@+id/llEmpty"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/iconEmpty"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_file" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/no_task_available"/>
+
+        </LinearLayout>
+
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fabAdd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_add"
+            android:layout_gravity="bottom|end"
+            android:layout_marginEnd="@dimen/xs"
+            android:layout_marginBottom="@dimen/xs"/>
+
+<!--        <com.google.android.material.button.MaterialButton-->
+<!--            android:id="@+id/mbProfile"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginTop="@dimen/s"-->
+<!--            android:layout_marginEnd="@dimen/s"-->
+<!--            android:layout_gravity="end"-->
+<!--            android:text="@string/profile"-->
+<!--            app:cornerRadius="@dimen/xxs"-->
+<!--            android:minWidth="@dimen/zero"-->
+<!--            android:minHeight="@dimen/zero"/>-->
+
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+</layout>
